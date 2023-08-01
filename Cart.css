@@ -19,25 +19,90 @@ main {
 }
 
 header {
-	max-width: 1040px;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	background-color: 
+	background-color: #111;
+
 }
+
+.head {
+	max-width: 1040px;
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	margin-right: auto;
+	margin-left: auto;
+	height: 92px; 
+}
+.partHeader {
+	background-color:;
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+
+}
+
 .menuHeader ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	
 }
 
 .menuHeader li {
 	list-style-type: none;
-	margin: 1rem;
-	
-	color: wheat;
+	margin: 1.5rem;
+	color: white;
 }
 
+.logo {
+	width: 60%;
+	margin: 1rem;
+	
+}
+.logo:hover {
+	opacity: 70%;
+
+}
+.menuHeader {
+	background-color: ;
+	width: 70%;
+	margin: 1rem;
+
+}
+.menuHeader li:hover {
+	opacity: 70%;
+}
+.contact {
+	width: 30%;
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: 
+}
+
+
+
+.contact a:hover {
+	opacity: 70%;
+	background-color:white;
+}
+.contact a {
+	text-decoration: none;
+	margin: 1rem;
+}
+
+
+
+
+/*Mobile Version*/
+
+
+@media (max-width: 768px) {
+	body {
+	max-width: 720px;
+}
+
+header {
+	max-width: 720px;
+}
+
+}
