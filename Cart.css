@@ -9,6 +9,7 @@
 
 body {
 	min-height: 100vh;
+	background-color: pink;
 	
 }
 
@@ -38,6 +39,7 @@ header {
 	justify-content: space-around;
 	width: 80%;
 
+
 }
 
 .menuHeader ul {
@@ -52,6 +54,7 @@ header {
 	color: white;
 }
 
+
 .logo {
 	width: 60%;
 	margin: 1rem;
@@ -59,6 +62,7 @@ header {
 }
 .logo:hover {
 	opacity: 70%;
+	transition: 0.7s ease;
 
 }
 .menuHeader {
@@ -68,6 +72,7 @@ header {
 
 }
 .menuHeader li:hover {
+	transition: 0.7s ease;
 	opacity: 70%;
 }
 .contact {
@@ -83,13 +88,16 @@ header {
 
 .contact a:hover {
 	opacity: 70%;
-	background-color:white;
+	transition: 0.7s ease;
+	
 }
 .contact a {
 	text-decoration: none;
 	margin: 1rem;
 }
-
+.mobile-nav-toggle {
+	display: none;
+}
 
 
 
@@ -104,5 +112,44 @@ header {
 header {
 	max-width: 720px;
 }
+
+.partHeader {
+
+	position: fixed;
+	z-index: 1000;
+	inset: 0 0 0 30%;
+	flex-direction: column;
+	background: hsl(0 0% 100% / 0.1);
+	/*backdrop-filter: blur(0.2rem);*/
+
+
+	padding: min(2vh, 10rem) 2rem;
+
+	/*transform: translateX(100%);
+}
+
+.partHeader[data-visible="true"] {
+	transform: translateX(0%); */
+}
+
+.menuHeader ul {
+	flex-direction: column;
+}
+ 
+ .mobile-nav-toggle {
+ 	display: block;
+ 	position: absolute;
+ 	z-index: 9999;
+ 	background: url(images/hamburger.svg);
+ 	
+ 	background-repeat: no-repeat;
+
+ 	border: 0;
+ 	width: 2.5rem;
+ 	aspect-ratio: 1;
+ 	top: 1.5rem;
+ 	right: 2rem;
+
+ }
 
 }
